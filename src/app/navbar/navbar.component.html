@@ -1,0 +1,40 @@
+<nav class="navbar is-light" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <span><i>BP</i></span>
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a a routerLink="/" routerLinkActive="active" class="navbar-item"> INICIO </a>
+      <a a routerLink="/about" routerLinkActive="active" class="navbar-item"> SOBRE MI </a>
+      <a a routerLink="/experience" routerLinkActive="active" class="navbar-item"> EXPERIENCIA </a>
+      <a a routerLink="/education" routerLinkActive="active" class="navbar-item"> EDUCACIÓN </a>
+      <a a routerLink="/contact" routerLinkActive="active" class="navbar-item"> CONTACTO </a>
+      <a a routerLink="/profile" routerLinkActive="active" class="navbar-item"> PERFIL </a>
+      <!--<li><a class="nav-link" (click)="logout()" href="#" *ngIf="authService.logIn">Logout</a></li> -->
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+
+          <a routerLink="/login" routerLinkActive="active" class="button is-primary"> Log in </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
