@@ -1,1 +1,15 @@
-<h1>Hola mundo</h1>
+<h1>Portafolio Personal</h1>
+
+<ul>
+    <li><a routerLink="/" routerLinkActive="active">Inicio</a></li>
+    <li><a routerLink="/about" routerLinkActive="active">Sobre mi</a></li>
+    <li><a routerLink="/services" routerLinkActive="active">Servicios</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active">Contacto</a></li>
+    <li><a routerLink="/profile" routerLinkActive="active">Perfil</a></li>
+    <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+    <!--<li><a class="nav-link" (click)="logout()" href="#" *ngIf="authService.logIn">Logout</a></li> -->
+</ul>
+
+<router-outlet></router-outlet>
+
+<footer class="text-muted">Brian Pelaez #YoProgramo @2022</footer>
