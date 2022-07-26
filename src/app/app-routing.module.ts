@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component'
 import { Error404Component } from './error404/error404.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { HomeComponent } from './home/home.component';
+import { PortafolioComponent } from './portafolio/portafolio.component';
 
 // IMPORT COMPONENT END //
 
@@ -14,6 +15,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'contact', component: ContactoComponent},
   {path: 'home', component: HomeComponent},
+  {path: 'portafolio', component: PortafolioComponent},
+
 
 
   //{path: 'profile', component: LoginComponent, canActive: [AuthGuard]}, -> Solo accesible si el user esta logueado
