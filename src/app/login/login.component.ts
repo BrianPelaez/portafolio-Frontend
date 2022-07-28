@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from '../auth.service';
 
@@ -9,7 +8,8 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  form: FormGroup;
+  
+  form: FormGroup; // Inicializamos el formulario
   
   // Inyectar en el constructor el formBuilder
   constructor(private formBuilder: FormBuilder) {
@@ -18,6 +18,18 @@ export class LoginComponent implements OnInit {
       password: ['', [Validators.required, Validators.minLength(8)]],
       email: ['', [Validators.required, Validators.email]],
     });
+
+    // this.form = this.formBuilder.group({ // Se puede crear Validadores dependiendo el campo.
+    //   edad:[0, Validators.min(18)], // min valida que el valor sea igual o mayor a 18 
+    //   precio:[0, [Validators.min(500), Validators.max(3000)]], // compose deja hacer multiples validaciones.
+    //   name:['', Validators.required],
+    //   terms:['', Validators.requiredTrue], // Validacion para checkboxes
+    //   email:['', Validators.email], // Chequea si es un mail
+    //   text:['', Validators.pattern(/^[\w ]+$/)], // Valida Expresiones regulares
+    //   date:[''],
+    //   category:[''],
+    //   gender:[''],
+    // });
   }
 
   Login() {

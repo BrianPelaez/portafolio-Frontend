@@ -1,19 +1,44 @@
-<form [formGroup]="form"  (ngSubmit)="onEnviar($event)" class="form-signin" >
-  <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
-  <label for="inputEmail" class="sr-only" >Email</label>
-  <input type="email" id="inputEmail" class="form-control" formControlName="email" placeholder="Email..." required autofocus>
-  <div *ngIf="Mail?.errors && Mail?.touched" class="error-label">
-    <p>Inserte un mail válido.</p>
-  </div>
-  <label for="inputPassword" class="sr-only" >Password</label>
-  <input type="password" id="inputPassword" class="form-control" placeholder="Password" minlength="8" formControlName="password" required>
-  <div *ngIf="Password?.errors?.['minlength'] && Password?.touched" class="error-label">
-    <p>La contraseña no cumple con los requisitos minimos.</p>
-  </div>
-  <div class="checkbox mb-3">
-    <label>
-      <input type="checkbox" value="remember-me"> Recordar usuario
-    </label>
-  </div>
-  <button class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
-</form>
+<div class="form-container">
+  <form [formGroup]="form" (ngSubmit)="onEnviar($event)" class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+    <label for="inputEmail" class="sr-only">Email</label>
+    <input
+      type="email"
+      id="inputEmail"
+      class="form-control"
+      formControlName="email"
+      placeholder="Email..."
+      required
+      autofocus
+    />
+    <div *ngIf="Mail?.errors && Mail?.touched" class="error-label">
+      <p class="help is-danger">Inserte un mail válido.</p>
+    </div>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input
+      type="password"
+      id="inputPassword"
+      class="form-control"
+      placeholder="Password"
+      minlength="8"
+      formControlName="password"
+      required
+    />
+    <div
+      *ngIf="Password?.errors?.['minlength'] && Password?.touched"
+      class="error-label"
+    >
+      <p class="help is-danger">
+        La contraseña no cumple con los requisitos minimos.
+      </p>
+    </div>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me" /> Recordar usuario
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">
+      Iniciar Sesión
+    </button>
+  </form>
+</div>

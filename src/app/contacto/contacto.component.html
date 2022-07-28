@@ -10,7 +10,7 @@
         <div class="row">
             <!-- Contacto info item Start-->
             <div class="contacto-info-item padd-15">
-                <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="icon"><a href="https://wa.link/6tlgbk" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
                 <h4>Whatsapp</h4>
                 <p>+54 011 6462-9763</p>
             </div>
@@ -31,7 +31,7 @@
             <!-- Contacto info item End-->
             <!-- Contacto info item Start-->
             <div class="contacto-info-item padd-15">
-                <div class="icon"><i class="fa-brands fa-github"></i></div>
+                <div class="icon"><a href="https://github.com/BrianPelaez" target="_blank"><i class="fa-brands fa-github"></i></a></div>
                 <h4>Github</h4>
                 <p>github.com/BrianPelaez</p>
             </div>
@@ -40,40 +40,66 @@
         <h3 class="contacto-title padd-15">Enviame un email</h3>
         <h4 class="contacto-sub-title padd-15">Tu pregunta no es molestia!</h4>
         <!-- Contacto Form Start -->
-        <div class="row">
-            <div class="contacto-form padd-15">
-                <div class="row">
-                    <div class="form-item col-6 padd-15">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nombre">
+        <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+            <div class="row">
+                <div class="contacto-form padd-15">
+                    
+                    <div class="row">
+                        <div class="help is-danger col-6 padd-15">
+                            <div *ngIf="form.get('nombre')?.touched && form.get('nombre')?.errors" class="help is-danger">Ingrese un nombre</div>
+                            
+                        </div>
+                        <div class="help is-danger col-6 padd-15">
+                            <div *ngIf="form.get('email')?.touched && form.get('email')?.errors" class="help is-danger">Ingrese un mail válido</div>
+                            
                         </div>
                     </div>
-                    <div class="form-item col-6 padd-15">
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email">
+                    
+                    
+                    <div class="row">
+                        
+                        <div class="form-item col-6 padd-15">
+                            <div class="form-group">                            
+                                <input type="text" class="form-control" placeholder="Nombre" formControlName="nombre">
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-item col-6 padd-15">
+                            
+                            <div class="form-group">
+                                
+                                <input type="email" class="form-control" placeholder="Email" formControlName="email">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-item col-12 padd-15">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Asunto">
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Asunto" formControlName="asunto">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-item col-12 padd-15">
-                        <div class="form-group">
-                            <textarea class="form-control" id="" placeholder="Mensaje..." cols="30" rows="10"></textarea>
+                    <div class="row">
+                        <div class="help is-danger col-6 padd-15">
+                            <div *ngIf="form.get('mensaje')?.touched && form.get('mensaje')?.errors" class="help is-danger">Ingrese un mensaje</div>
+                            
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="form-item col-12 padd-15">
-                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <div class="form-group">
+                                <textarea class="form-control" id="" placeholder="Mensaje..." cols="30" rows="10" formControlName="mensaje"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12 padd-15">
+                            <button type="submit" class="btn">Enviar Mensaje</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>
