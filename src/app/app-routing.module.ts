@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 // IMPORT COMPONENT START //
-import { LoginComponent } from './login/login.component';
-import { AboutComponent } from './about/about.component'
-import { Error404Component } from './error404/error404.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { HomeComponent } from './home/home.component';
-import { PortafolioComponent } from './portafolio/portafolio.component';
+import { LoginComponent } from './components/login/login.component';
+import { AboutComponent } from './components/about/about.component'
+import { Error404Component } from './components/error404/error404.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { HomeComponent } from './components/home/home.component';
+import { PortafolioComponent } from './components/portafolio/portafolio.component';
 
 // IMPORT COMPONENT END //
 
@@ -16,8 +16,6 @@ const routes: Routes = [
   {path: 'contact', component: ContactoComponent},
   {path: 'home', component: HomeComponent},
   {path: 'portafolio', component: PortafolioComponent},
-
-
 
   //{path: 'profile', component: LoginComponent, canActive: [AuthGuard]}, -> Solo accesible si el user esta logueado
   {path: '', redirectTo: 'home', pathMatch: 'full'},

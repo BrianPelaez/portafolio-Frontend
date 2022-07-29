@@ -5,15 +5,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { Error404Component } from './error404/error404.component';
-import { LoginComponent } from './login/login.component';
-import { ContactoComponent } from './contacto/contacto.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { PortafolioComponent } from './portafolio/portafolio.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
+import { AboutComponent } from './components/about/about.component';
+import { Error404Component } from './components/error404/error404.component';
+import { LoginComponent } from './components/login/login.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { PortafolioComponent } from './components/portafolio/portafolio.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({

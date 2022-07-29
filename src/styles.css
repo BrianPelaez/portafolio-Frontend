@@ -8,6 +8,7 @@
     outline: none;
     text-decoration: none;
     box-sizing: border-box;
+    
 }
 
 ::before, ::after{
@@ -27,6 +28,7 @@ body{
     line-height: 1.5;
     font-size: 16px;
     font-family: "Poppins" sans-serif;
+    height: 100%;
 }
 /* Dark mode */
 body.dark{
@@ -49,15 +51,17 @@ body.dark{
 .container {
     max-width: 1100px;
     width: 100%;
-    margin: auto
+    margin: auto;
+    
 }
 .section {
     background-color: var(--bg-black-900);
-    min-height: 100vh;
+    min-height:100%;
     display: block;
     padding: 0 30px;
     opacity: 1;
 }
+
 .section .container {
     padding-top: 60px;
     padding-bottom: 70px;

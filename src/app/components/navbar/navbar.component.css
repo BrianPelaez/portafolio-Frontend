@@ -1,0 +1,26 @@
+*{
+    background-color: var(--text-black-900);
+}
+div a {
+    text-decoration: none;
+}
+
+.icon,
+a{
+    color: var(--bg-black-900) !important;
+}
+
+
+li:hover > a {
+    color: #3d6acc !important;
+    border-bottom: 1px solid #3d6acc;
+}
+
+a:hover > .icon {
+    color: #3d6acc !important;
+}
+
+
+
+
+

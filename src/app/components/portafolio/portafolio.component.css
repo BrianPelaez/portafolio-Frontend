@@ -25,4 +25,6 @@
 .portafolio .portafolio-item-inner .portafolio-img img {
     width: 100%;
     display: block;
+    max-height: 150px;
+    background-color: red;
 }
