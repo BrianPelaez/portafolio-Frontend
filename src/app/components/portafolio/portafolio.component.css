@@ -1,3 +1,6 @@
+section{
+    min-height: 80vh !important;
+}
 
 .portafolio .container{
     padding-bottom: 40px;

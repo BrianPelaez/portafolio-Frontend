@@ -20,11 +20,11 @@ export class ContactoComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log("Prueba")
+
   }
 
   onSubmit(event: Event){
-
+    document.location = `mailto:pelaez_brian@hotmail.com?subject=${this.form.get('asunto')?.value}&body=${this.form.get('mensaje')?.value}`;
   }
 
   get Nombre() {

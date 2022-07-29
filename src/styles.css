@@ -16,11 +16,11 @@
   }
 
 :root {
-    --skin-color: #ec1839;
+    --skin-color: #db2003;
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
     --bg-black-50: #e8dfec;
-    --text-black-900: #302e4d;
+    --text-black-900: #333231;
     --text-black-700: #504e70;
 }
 
@@ -28,7 +28,7 @@ body{
     line-height: 1.5;
     font-size: 16px;
     font-family: "Poppins" sans-serif;
-    height: 100%;
+    min-height: 100vh !important;
 }
 /* Dark mode */
 body.dark{

@@ -12,12 +12,11 @@ a{
 
 
 li:hover > a {
-    color: #3d6acc !important;
-    border-bottom: 1px solid #3d6acc;
+    color:var(--skin-color) !important;
+    border-bottom: 1px solid var(--skin-color);
 }
-
 a:hover > .icon {
-    color: #3d6acc !important;
+    color: var(--skin-color) !important;
 }
 
 

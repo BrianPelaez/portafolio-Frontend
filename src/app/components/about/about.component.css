@@ -86,13 +86,18 @@
     height: 100%;
     border-radius: 4px;
     background-color: var(--skin-color);
+    animation: fullfill 1s ease-in-out;
 }
+
+@keyframes fullfill {
+    from { width: 0%; }
+    to { width: attr(skill-percent);}
+}
+
 .about .about-content .skills .skill-item .skill-percent{
     position: absolute;
-    
     color: var(--text-black-900);
     right: 3%;
-    
     font-weight: 400;
     line-height: 40px;
 }
