@@ -1,0 +1,108 @@
+{
+  "data": {
+    "name": "Brian Pelaez",
+    "profileURL": "https://instagram.faep9-2.fna.fbcdn.net/v/t51.2885-15/73271707_529316894295366_945241150295444377_n.jpg?stp=dst-jpg_e35_p640x640_sh0.08&_nc_ht=instagram.faep9-2.fna.fbcdn.net&_nc_cat=106&_nc_ohc=xGfjxpTmMZYAX82e4Ep&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjE3MjA1NjM2ODkzNTQ4MjgyMQ%3D%3D.2.w640-ccb7-5&oh=00_AT_1x0-_pxD9K3Iv8robHYDx3VzWiEt8NWYhnqv5iGRx_A&oe=62F0911F&_nc_sid=30a2ef",
+    "nacimiento": {
+      "dia": 17,
+      "mes": 9,
+      "anio": 1993
+    },
+    "github": "github.com/BrianPelaez",
+    "linkedin": "https://www.linkedin.com/in/bpelaez/",
+    "cel": "+54 011 6462-9763",
+    "mail": "pelaez_brian@hotmail.com",
+    "edad": "28",
+    "puesto": "Full-Stack Developer",
+    "education": [
+      {
+        "name": "FullStack Developer Con Java Y Angular",
+        "institucion": "Universidad Técnica Nacional de Buenos Aires",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg",
+        "url": "https://www.utn.edu.ar/es/",
+        "descripcion": "Eclipse - XAMPP - Spring - Maven - Postman - HTML/CSS - MySQL - Git - Angular - POO - UML - Sprint",
+        "anio": "2018"
+      },
+      {
+        "name": "Desarrollador de aplicaciones con Android Studio",
+        "institucion": "Coursera",
+        "img": "https://media-exp1.licdn.com/dms/image/C4D0BAQGexnfBxeEG-g/company-logo_100_100/0/1608039227697?e=1667433600&v=beta&t=dy1Fwk_1pHuNo3eiyBxm4pf0XY3VSbaRTEm0oNuXOMs",
+        "url": "https://www.coursera.org/",
+        "descripcion": "Android Studio - Database (DBMS) - Android Software Development - Material Design",
+        "anio": "2020"
+      },
+      {
+        "name": "#SeProgramar",
+        "institucion": "Ministerio de Desarrollo Productivo",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg",
+        "url": "https://www.utn.edu.ar/es/",
+        "descripcion": "Fundamentos de la programación Programación estructurada Programación orientada a objetos (JS)",
+        "anio": "2022"
+      },
+      {
+        "name": "#YoProgramo",
+        "institucion": "Ministerio de Desarrollo Productivo",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/6/67/UTN_logo.jpg",
+        "url": "https://www.utn.edu.ar/es/",
+        "descripcion": "Programación orientada a objetos (JAVA)\nDiseño orientado a objetos (JAVA)\nProblemas algorítmicos (JAVA)\nDiseño de bases de datos (SQL)\nFrontend - Backend\nIntegración con otros sistemas web",
+        "anio": "2022"
+      }
+    ],
+    "ubicacion": "Buenos Aires, CABA (ARG)",
+    "trabajos": [
+      {
+        "name": "WeatherApp",
+        "url": "https://github.com/BrianPelaez/WeatherWebApp",
+        "img": "https://nordicapis.com/wp-content/uploads/How-to-Build-an-API-Driven-Weather-App.png"
+      },
+      {
+        "name": "SongSearch",
+        "url": "https://github.com/BrianPelaez/SongSearch",
+        "img": "data:image/jpeg;base64,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"
+      },
+      {
+        "name": "ToDo List",
+        "url": "https://github.com/BrianPelaez/ListaTareas/tree/master/todolist",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLZoHDTAeSzK7cDSi4uJIw_D4nI7cxMwSTGEhK0BK-s2YjjyvwAW5-5nV7cTVQbwRwCR4&usqp=CAU"
+      },
+      {
+        "name": "ToDo List Angular",
+        "url": "https://github.com/BrianPelaez/ToDoList-Angular",
+        "img": "https://cdn.thewirecutter.com/wp-content/uploads/2019/08/todolistapp-2x1-0757.jpg?auto=webp&quality=75&crop=2:1&width=1024"
+      }
+    ],
+    "about": "Cuento con amplio conocimiento en atención al cliente ya sea externo o interno.\nMe considero una persona proactiva y resolutiva al momento de encarar un problema. Siempre en busqueda de conocimiento para poder introducirme en el area de programación que es algo que siempre me apasionó y disfruto hacer.",
+    "skills": {
+      "css": "80%",
+      "js": "90%",
+      "html": "95%",
+      "react": "80%",
+      "angular": "80%"
+    },
+    "exp": [
+      {
+        "name": "Compumundo",
+        "puesto": "Auxiliar Técnico",
+        "anios": "2015 - 2018",
+        "img": "data:image/png;base64,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",
+        "url": "https://www.compumundo.com.ar/",
+        "descripcion": "Técnico de sucursal, atención al cliente, ventas, asesoramiento tecnológico. Reparación oficial de equipos Samsung, Apple, ASUS, Nokia, Hyundai. Tareas de depósito, auditoria de stock, recepción de mercadería. Facturación y cobranzas."
+      },
+      {
+        "name": "Compumundo",
+        "puesto": "Jéfe Técnico",
+        "anios": "2018 - 2021",
+        "img": "data:image/png;base64,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",
+        "url": "https://www.compumundo.com.ar/",
+        "descripcion": "Responsable del sector técnico a cargo de tres personas. Planes de acción, coaching, devoluciones, seguimiento y talent map del servicio técnico. Gestión de horario del personal. Capacitación para nuevos recursos. Creación de planillas para control de ventas y objetivos de la sucursal"
+      },
+      {
+        "name": "Fleni",
+        "puesto": "Sistemas y procesos",
+        "anios": "2021 - al presente",
+        "img": "https://cdn.worldvectorlogo.com/logos/fleni.svg",
+        "url": "https://www.fleni.org.ar/",
+        "descripcion": "Resolución y seguimiento de Incidentes con Invgate.\nAdministrador de InvGate.\nMantenimiento de hardware y software en entorno Windows / Linux / MacOs.\nConfiguración de telefonía ip y central telefónica.\nMantenimiento de redes, switches y cableado.\nManejo de cuentas y grupos en AD.\nWindows server - SQL server."
+      }
+    ]
+  }
+}

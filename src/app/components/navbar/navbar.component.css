@@ -1,5 +1,5 @@
 *{
-    background-color: var(--text-black-900);
+    background-color: var(--bg-black-900);
 }
 div a {
     text-decoration: none;
@@ -7,7 +7,7 @@ div a {
 
 .icon,
 a{
-    color: var(--bg-black-900);
+    color: var(--text-black-900);
 }
 
 .is-active .icon{

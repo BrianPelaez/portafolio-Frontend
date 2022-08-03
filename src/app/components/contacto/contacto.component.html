@@ -12,33 +12,34 @@
             <div class="contacto-info-item padd-15">
                 <div class="icon"><a href="https://wa.link/6tlgbk" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
                 <h4>Whatsapp</h4>
-                <p>+54 011 6462-9763</p>
+                <p>{{portafolioData.cel}}</p>
             </div>
             <!-- Contacto info item End-->
             <!-- Contacto info item Start-->
             <div class="contacto-info-item padd-15">
                 <div class="icon"><a href="https://www.linkedin.com/in/bpelaez/"><i class="fa-brands fa-linkedin"></i></a></div>
-                <h4>LinedIn</h4>
-                <p>https://www.linkedin.com/in/bpelaez/</p>
+                <h4>LinkedIn</h4>
+                <p>{{portafolioData.linkedin}}</p>
             </div>
             <!-- Contacto info item End-->
             <!-- Contacto info item Start-->
             <div class="contacto-info-item padd-15">
                 <div class="icon"><i class="fa fa-envelope"></i></div>
                 <h4>Email</h4>
-                <p>pelaez_brian@hotmail.com</p>
+                <p>{{portafolioData.mail}}</p>
             </div>
             <!-- Contacto info item End-->
             <!-- Contacto info item Start-->
             <div class="contacto-info-item padd-15">
                 <div class="icon"><a href="https://github.com/BrianPelaez" target="_blank"><i class="fa-brands fa-github"></i></a></div>
                 <h4>Github</h4>
-                <p>github.com/BrianPelaez</p>
+                <p>{{portafolioData.github}}</p>
             </div>
             <!-- Contacto info item End-->
         </div>
         <h3 class="contacto-title padd-15">Enviame un email</h3>
         <h4 class="contacto-sub-title padd-15">Tu pregunta no es molestia!</h4>
+
         <!-- Contacto Form Start -->
         <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
             <div class="row">
@@ -95,7 +96,7 @@
                     </div>
                     <div class="row">
                         <div class="form-item col-12 padd-15">
-                            <button type="submit" class="btn" onclick="sendMail();">Enviar Mensaje</button>
+                            <button type="submit" class="btn">Enviar Mensaje</button>
                         </div>
                     </div>
                 </div>

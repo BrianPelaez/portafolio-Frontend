@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { PortafolioService } from 'src/app/services/portafolio.service';
 
 
 @Component({
@@ -8,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  portafolioData:any;
+
+  constructor(private portafolio: PortafolioService) { }
 
   ngOnInit(): void {
+    this.portafolio.obtenerDatos().subscribe(async (data) => {
+      this.portafolioData = await data;      
+    });
+    
+    
   }
 
 }

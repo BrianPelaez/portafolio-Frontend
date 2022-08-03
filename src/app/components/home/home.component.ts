@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PortafolioService } from 'src/app/services/portafolio.service';
 
 
 
@@ -9,12 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  portafolioData: any;
+  expList: any;
   
 
   constructor() { 
   }
 
   ngOnInit(): void {
+
   }
 
 }

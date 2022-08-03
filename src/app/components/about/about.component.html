@@ -9,12 +9,9 @@
       <div class="about-content padd-15">
         <div class="row">
           <div class="about-text padd-15">
-            <h3>Soy Brian Pelaez y soy <span>Web Developer</span></h3>
+            <h3>Soy {{portafolioData.name}} y soy <span>{{portafolioData.puesto}}</span></h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              in earum quidem modi iste facere unde. Voluptatibus eius quo ea
-              voluptates repellendus sapiente esse, modi corrupti cupiditate
-              vitae, consequuntur facere!
+              {{portafolioData.about}}
             </p>
           </div>
         </div>
@@ -22,25 +19,22 @@
           <div class="personal-info padd-15">
             <div class="row">
               <div class="info-item padd-15">
-                <p>Nacimiento : <span>17 SEP 1993</span></p>
+                <p>Nacimiento : <span>{{portafolioData.nacimiento.dia}} / {{portafolioData.nacimiento.mes}} / {{portafolioData.nacimiento.anio}}</span></p>
               </div>
               <div class="info-item padd-15">
-                <p>Edad : <span>28</span></p>
+                <p>Edad : <span>{{portafolioData.edad}}</span></p>
               </div>
               <div class="info-item padd-15">
-                <p>GitHub : <span>github.com/BrianPelaez</span></p>
+                <p>GitHub : <span>{{portafolioData.github}}</span></p>
               </div>
               <div class="info-item padd-15">
-                <p>Mail : <span>pelaez_brian@hotmail.com</span></p>
+                <p>Mail : <span>{{portafolioData.mail}}</span></p>
               </div>
               <div class="info-item padd-15">
-                <p>Teléfono : <span>+54 011 6462-9763</span></p>
+                <p>Teléfono : <span>{{portafolioData.cel}}</span></p>
               </div>
               <div class="info-item padd-15">
-                <p>Ciudad : <span>Argentina, CABA</span></p>
-              </div>
-              <div class="info-item padd-15">
-                <p>Freelance : <span>Disponible</span></p>
+                <p>Ciudad : <span>{{portafolioData.ubicacion}}</span></p>
               </div>
             </div>
             <div class="row">
@@ -57,31 +51,31 @@
           </div>
           <div class="skills">
             <div class="skill-item padd-15">
-              <div class="skill-percent">70%</div>
+              <div class="skill-percent">{{portafolioData.skills.css}}</div>
               <h5>CSS</h5>
               <div class="progress">
-                <div class="progress-in" style="width: 70%"></div>
+                <div class="progress-in" [style]="{width: portafolioData.skills.css}"></div>
               </div>
             </div>
             <div class="skill-item padd-15">
-              <div class="skill-percent">80%</div>
+              <div class="skill-percent">{{portafolioData.skills.html}}</div>
               <h5>HTML</h5>
               <div class="progress">
-                <div class="progress-in" style="width: 80%"></div>
+                <div class="progress-in" [style]="{width: portafolioData.skills.html}"></div>
               </div>
             </div>
             <div class="skill-item padd-15">
-              <div class="skill-percent">87%</div>
+              <div class="skill-percent">{{portafolioData.skills.js}}</div>
               <h5>JS</h5>
               <div class="progress">
-                <div class="progress-in" style="width: 87%"></div>
+                <div class="progress-in" [style]="{width: portafolioData.skills.js}"></div>
               </div>
             </div>
             <div class="skill-item padd-15">
-              <div class="skill-percent">78%</div>
+              <div class="skill-percent">{{portafolioData.skills.react}}</div>
               <h5>React</h5>
               <div class="progress">
-                <div class="progress-in" style="width: 78%"></div>
+                <div class="progress-in" [style]="{width: portafolioData.skills.react}"></div>
               </div>
             </div>
           </div>
@@ -94,63 +88,16 @@
               <div class="timeline-box padd-15">
                 <div class="timeline shadow-dark">
                   <!-- TimeLine Item -->
-                  <div class="timeline-item">
+                  <div class="timeline-item" *ngFor="let item of portafolioData.education">
                     <div class="circle-dot"></div>
                     <h3 class="timeline-date">
-                      <i class="fa fa-calendar"></i> 2018
+                      <i class="fa fa-calendar"></i> {{item.anio}} - {{item.institucion}}
                     </h3>
                     <h4 class="timeline-title">
-                      FullStack Developer con Java y Angular
+                      {{item.name}}
                     </h4>
                     <p class="timeline-text">
-                      Eclipse - XAMPP - Spring - Maven - Postman - HTML/CSS -
-                      MySQL - Git - Angular - POO - UML - Sprint
-                    </p>
-                  </div>
-                  <!-- TimeLine Item -->
-                  <!-- TimeLine Item -->
-                  <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                      <i class="fa fa-calendar"></i> 2020
-                    </h3>
-                    <h4 class="timeline-title">
-                      Desarrollador con Android Studio
-                    </h4>
-                    <p class="timeline-text">
-                      Android Studio - Database (DBMS) - Android Software
-                      Development - Material Design
-                    </p>
-                  </div>
-                  <!-- TimeLine Item -->
-                  <!-- TimeLine Item -->
-                  <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                      <i class="fa fa-calendar"></i> 2022
-                    </h3>
-                    <h4 class="timeline-title">#SeProgramar</h4>
-                    <p class="timeline-text">
-                      Fundamentos de la programación
-                      Programación estructurada
-                      Programación orientada a objetos (JS)
-                    </p>
-                  </div>
-                  <!-- TimeLine Item -->
-                  <!-- TimeLine Item -->
-                  <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                      <i class="fa fa-calendar"></i> 2022
-                    </h3>
-                    <h4 class="timeline-title">#YoProgramo</h4>
-                    <p class="timeline-text">
-                        Programación orientada a objetos (JAVA)<br>
-                        Diseño orientado a objetos (JAVA)<br>
-                        Problemas algorítmicos (JAVA)<br>
-                        Diseño de bases de datos (SQL)<br>
-                        Frontend - Backend<br>
-                        Integración con otros sistemas web<br>
+                      {{item.descripcion}}
                     </p>
                   </div>
                   <!-- TimeLine Item -->
@@ -164,61 +111,20 @@
               <div class="timeline-box padd-15">
                 <div class="timeline shadow-dark">
                   <!-- TimeLine Item -->
-                  <div class="timeline-item">
+                  <div class="timeline-item" *ngFor="let elem of portafolioData.exp">
                     <div class="circle-dot"></div>
                     <h3 class="timeline-date">
-                      <i class="fa fa-calendar"></i> 2015 - 2018
+                      <i class="fa fa-calendar"></i> {{elem.anios}} - {{elem.name}}
                     </h3>
                     <h4 class="timeline-title">
-                      Compumundo - Auxiliar Técnico
+                      {{elem.puesto}}
                     </h4>
                     <p class="timeline-text">
-                      Técnico de sucursal, atención al cliente, ventas,
-                      asesoramiento tecnológico. Reparación oficial de equipos
-                      Samsung, Apple, ASUS, Nokia, Hyundai. Tareas de depósito,
-                      auditoria de stock, recepción de mercadería. Facturación y
-                      cobranzas.
+                      {{elem.descripcion}}
                     </p>
                   </div>
                   <!-- TimeLine Item -->
-                  <!-- TimeLine Item -->
-                  <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                      <i class="fa fa-calendar"></i> 2018 - 2021
-                    </h3>
-                    <h4 class="timeline-title">Compumundo - Jéfe Técnico</h4>
-                    <p class="timeline-text">
-                      Responsable del sector técnico a cargo de tres personas.
-                      Planes de acción, coaching, devoluciones, seguimiento y
-                      talent map del servicio técnico. Gestión de horario del
-                      personal. Capacitación para nuevos recursos. Creación de
-                      planillas para control de ventas y objetivos de la
-                      sucursal
-                    </p>
-                  </div>
-                  <!-- TimeLine Item -->
-                  <!-- TimeLine Item -->
-                  <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                      <i class="fa fa-calendar"></i> 2021 - Presente
-                    </h3>
-                    <h4 class="timeline-title">Sistemas y procesos en Fleni</h4>
-                    <p class="timeline-text">
-                      Resolución y seguimiento de Incidentes con Invgate.<br>
-                      Administrador de InvGate. <br>
-                      Mantenimiento de hardware y
-                      software en entorno Windows / Linux / MacOs. <br>
-                      Configuración de telefonía ip y central telefónica. <br>
-                      Mantenimiento de
-                      redes, switches y cableado.<br>
-                      Manejo de cuentas y grupos en
-                      AD. <br>
-                      Windows server - SQL server.
-                    </p>
-                  </div>
-                  <!-- TimeLine Item -->
+                  
                 </div>
               </div>
             </div>
