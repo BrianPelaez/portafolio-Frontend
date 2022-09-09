@@ -124,6 +124,7 @@
     border-radius: 10px;
     width: 100%;
     position: relative;
+    height: 750px;
 }
 .about .about-content .timeline .timeline-item {
     position: relative;
@@ -172,4 +173,110 @@
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
+}
+
+@media screen and (max-width: 768px){
+    section{
+        
+        padding: 0;
+    }
+    h2{
+        margin-left: 30px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    .about .about-content .personal-info .info-item{
+        max-width: 100%;
+    }
+    .about .about-content .personal-info .info-item p{
+        text-align: center;
+    }
+    .row .personal-info{
+        min-width: 100%;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex: 1 100%
+    }
+    .about-content{
+        padding: 15px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills {  
+        min-width: 100%;
+    }
+    .timeline-box{
+        padding: 0;
+    }
+    .education{
+        min-width: 100%;
+        padding:0 ;
+    }
+    .experience{
+        min-width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+
+    h2{
+        margin-left: 30px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+    .about .about-content .personal-info {
+        min-width: 100%;
+    }
+    .about .about-content .personal-info .info-item{
+        max-width: 100%;
+        flex: 1 1 50%;
+    }
+    .about .about-content .personal-info .info-item p{
+        text-align: center;
+    }
+    .about .about-content .personal-info .row{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex: 1 1 50%;        
+    }
+
+    .about-content{
+        padding: 15px;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills {  
+        min-width: 100%;
+    }
+    .timeline-box{
+        padding: 0;
+    }
+    .education{
+        min-width: 100%;
+        padding:0 ;
+    }
+    .experience{
+        min-width: 100%;
+        padding: 0;
+    }
+
 }

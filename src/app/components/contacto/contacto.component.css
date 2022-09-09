@@ -74,3 +74,48 @@
     height: 50px;
     padding: 0 50px;
 }
+
+@media screen and (max-width: 768px){
+    .row {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto-info-item{
+        min-width: 100%;
+    }
+
+    .contacto .contacto-form .col-6 {
+        flex: 0 0 100%;
+        min-width: 100%;
+        padding: 0;
+    }
+    .contacto .contacto-form .col-12 {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1100px){
+
+    .contacto-info-item:has(.row){
+        max-width: 100%;
+        flex: 1 1 50%;
+    }
+
+     .contacto .contacto-info-item {
+        max-width: 100%;
+        flex: 1 1 50%;
+    }
+
+    .contacto .contacto-form .col-6 {
+        flex: 1 100%;
+        min-width: 100%;
+        padding: 0;
+    }
+    .contacto .contacto-form .col-12 {
+        padding: 0;
+    }
+}

@@ -15,19 +15,29 @@ section{
     font-weight: 500;
 }
 .portafolio .portafolio-item{
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 50%;
+    max-width: 50%;
     margin-bottom: 30px;
 }
 .portafolio .portafolio-item-inner {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
+    min-height: 350px;
     overflow: hidden;
     cursor: pointer;
 }
 .portafolio .portafolio-item-inner .portafolio-img img {
     width: 100%;
-    display: block;
-    max-height: 150px;
-    background-color: red;
+    object-fit:cover;
+    height: 350px;
+}
+
+@media screen and (max-width: 768px){
+    .row{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .portafolio-item{
+        min-width: 100%;
+    }
 }

@@ -17,7 +17,6 @@ ul {
 }
 .section {
     background-color: var(--bg-black-900);
-    min-height: 80vh !important;
     display: block;
     padding: 0 30px;
     opacity: 1;
@@ -101,7 +100,7 @@ ul {
 
 /* Home */
 .home{
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     color: var(--text-black-900);
 }
@@ -124,6 +123,7 @@ h3.my-profession{
 }
 .typing {
     color: var(--skin-color);
+    font-size: 30px;
 }
 .home-info p {
     margin-bottom: 70px;
@@ -160,4 +160,89 @@ h3.my-profession{
     margin: auto;
     border-radius: 5px;
     height: 400px;
+}
+
+@media screen and (max-width: 768px){
+    .section{
+        padding: 0;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        min-width: 100vw;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-info{
+        flex: 0 80%;
+        max-width: 80%;
+    }
+    .padd-15{
+        padding: 0;
+    }
+    .home .home-img{
+        flex: 1;
+        min-width: 100%;
+        margin-top: 5em;
+    }
+
+    .btn{
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .home-img::after{
+        right: 20px;
+        bottom: -40px;
+    }
+    .home-img::before{
+        left: 20px;
+        top: -35px;
+    }
+} 
+
+@media screen and (max-width: 930px){
+    .home-img::after{
+        right: 20px;
+        bottom: -40px;
+    }
+    .home-img::before{
+        left: 20px;
+        top: -35px;
+    }
+
+    .section{
+        padding: 0;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        min-width: 100vw;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .home-info{
+        flex: 0 80%;
+        max-width: 80%;
+    }
+    .padd-15{
+        padding: 0;
+    }
+    .home .home-img{
+        flex: 1;
+        min-width: 100%;
+        margin-top: 5em;
+    }
+
+    .btn{
+        display: flex;
+        max-width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
 }

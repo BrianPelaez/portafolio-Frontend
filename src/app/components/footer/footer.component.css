@@ -3,7 +3,9 @@
     margin: 0;
 }
 
-footer{
+
+
+.content {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -18,14 +20,15 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: 100%;
+    margin: 0;
     color: #FFF;
 }
 
 .icons-container i{
     color: #FFF;
     font-size: 25px;
-    margin: 0 15px 0 15px;
+    margin: 0 15px 0px 15px;
 }
 
 .icons-container i:hover{
